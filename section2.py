@@ -104,7 +104,7 @@ def recommend(username,users):
 
 	for key in rating_nearest:
 		if not key in rating_current:
-			recommendation_list.append(key)	
+			recommendation_list.append((key,rating_nearest[key]))	
 
 	return recommendation_list
 
